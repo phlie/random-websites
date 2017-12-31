@@ -1,0 +1,94 @@
+body {
+    background-image: url("../img/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /* color: #54ff00; */
+    color: black;
+    font-family: 'Kalam', cursive;
+}
+
+.column {
+   background-color: rgba(112, 198, 75, 0.6);
+   padding: 40px;
+   animation: 4s slidein;
+   transform-origin: right top;
+}
+
+@keyframes slidein {
+    from { transform: rotate(-90deg);
+	   background-color: black; 
+	   color: none; }
+    to   { transform: rotate(0deg);
+	   background-color: rgba(112, 198, 75, 0.6);
+	   color: black; }
+}
+
+.column:hover {
+    background-color: rgba(112, 198, 75, 0.9);
+}
+
+h1 {
+    font-size: 6em;
+    font-family: 'Frijole', cursive;
+    color: #ff6c00;
+    animation: 6s out-header;
+}
+
+h1:hover {
+    transform: rotate(180deg);
+    animation: 6s in-header;
+}
+
+@keyframes in-header {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(180deg); }
+}
+
+@keyframes out-header {
+    from { transform: rotate(180deg); }
+    to   { transform: rotate(0deg); }
+}
+
+h2 {
+    font-family: 'Hammersmith One', sans-serif;
+    color: #54ff00;
+    font-size: 3.5em;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Hammersmith One', sans-serif;
+    color: #54ff00;
+    text-decoration: underline;
+    font-size: 3em;
+    text-align: center;
+}
+
+a {
+    font-family: 'Walter Turncoat', cursive;
+    color: white;
+    font-size: 2.5em;
+    display: block; 
+    text-align:center
+}
+
+a:hover {
+    color: #ff6c00;
+    text-decoration: none;
+    border: 3px solid black;
+    margin: -3px;
+    background-color: rgba(0, 0, 0, 0.5);
+    animation: fadein 1s;
+
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+p {
+    font-size: 2em;
+    line-height: 130%;
+}
